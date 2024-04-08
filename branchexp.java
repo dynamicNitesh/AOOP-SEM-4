@@ -24,7 +24,12 @@ class branchexp{
 		break;
 		case 3:
 		System.out.println("ENTER THE AMOUNT TO withdraw:");
-		u1.withdraw(scan.nextInt());
+		try{
+			u1.withdraw(scan.nextInt());
+		}
+		catch(ArithmeticException e){
+			System.out.println(e.getMessage());
+		}
 		break;
 		 case 4:
 						
